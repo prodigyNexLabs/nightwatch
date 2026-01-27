@@ -167,7 +167,7 @@ const PrivacyPolicyWeb = () => (
             <p>We do not sell personal data.</p>
             <p>Data may be shared with:</p>
             <ul className="space-y-2">
-              <li>• Cloud hosting and infrastructure providers</li>
+              <li>• Cloud infrastructure providers</li>
               <li>• Analytics and monitoring services</li>
               <li>• Notification and messaging services</li>
               <li>• Payment processors (if applicable)</li>

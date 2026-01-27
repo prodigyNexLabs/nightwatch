@@ -21,8 +21,8 @@ const TermsWeb = () => (
               <h2 className="text-xl font-semibold text-slate-900">1. Platform scope</h2>
               <p>
                 Crozroad provides access discovery and operational coordination for parking, street
-                vendors, and live events. The platform facilitates discovery, not transactions. Any
-                transaction or booking occurs directly between users and hosts.
+                vendors, and live events. The platform facilitates discovery and context, not
+                transactions.
               </p>
             </section>
 
@@ -72,8 +72,8 @@ const TermsWeb = () => (
               <h2 className="text-xl font-semibold text-slate-900">7. Limitation of liability</h2>
               <p>
                 Crozroad is provided on an “as is” basis. We are not liable for indirect, incidental,
-                or consequential damages arising from reliance on real-time data, host performance, or
-                third-party actions.
+                or consequential damages arising from reliance on real-time data or third-party
+                actions.
               </p>
             </section>
 

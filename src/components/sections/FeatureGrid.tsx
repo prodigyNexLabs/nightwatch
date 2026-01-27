@@ -4,24 +4,24 @@ import Container from '../layout/Container'
 
 const features = [
   {
-    title: 'Real-time urban intelligence',
+    title: 'Spaces are the foundation',
     description:
-      'Blend sensor data, merchant signals, and civic feeds into a single time-based operating layer.',
+      'Explore private parking, open grounds, rooftops, halls, pop-up zones, or commercial spaces with clear rules and capacity.',
   },
   {
-    title: 'Access-first routing',
+    title: 'Events activate spaces',
     description:
-      'Coordinate arrivals, parking, and event ingress with predictive routing windows that shift by demand.',
+      'See live, ticketed, or community events surfaced inside nearby spaces and driving discovery.',
   },
   {
-    title: 'Vendor ecosystem clarity',
+    title: 'Shops live inside spaces',
     description:
-      'Surface street commerce density, category mix, and compliance availability in real time.',
+      'Businesses are anchored to the space or event where they operate, making discovery contextual and relevant.',
   },
   {
-    title: 'Programmable hosting',
+    title: 'Parking enables access',
     description:
-      'Unlock hosting workflows for pop-ups and live events with guardrails and legal readiness.',
+      'Find private, commercial, or event-linked parking connected to the places that matter.',
   },
 ]
 
@@ -35,11 +35,10 @@ const FeatureGrid = () => (
         transition={{ duration: 0.4 }}
         className="max-w-2xl"
       >
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Why Crozroad</p>
-        <h2 className="text-3xl font-semibold text-slate-900">Operate the city as a living system</h2>
+        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">The Model</p>
+        <h2 className="text-3xl font-semibold text-slate-900">One system for spaces, events, shops, and parking</h2>
         <p className="mt-3 text-base text-slate-600">
-          Crozroad synchronizes access across people, places, and time. We surface the signals that
-          matter most when decisions need to be made fast.
+          Crozroad keeps the mental model simple so discovery is fast and intuitive.
         </p>
       </motion.div>
       <div className="grid gap-6 md:grid-cols-2">

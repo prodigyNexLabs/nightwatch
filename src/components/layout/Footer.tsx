@@ -3,12 +3,10 @@ import { siteConfig } from '../../config/site.config'
 import Container from './Container'
 
 const legalLinks = [
-  { label: 'Privacy Policy (Web)', href: '/privacy/web' },
+  { label: 'Privacy Policy (Web)', href: '/privacy' },
   { label: 'Privacy Policy (Mobile)', href: '/privacy/mobile' },
-  { label: 'Terms (Web)', href: '/terms/web' },
+  { label: 'Terms (Web)', href: '/terms' },
   { label: 'Terms (Mobile)', href: '/terms/mobile' },
-  { label: 'Hosting Rules', href: '/hosting/rules' },
-  { label: 'Hosting Terms', href: '/hosting/terms' },
 ]
 
 const Footer = () => (

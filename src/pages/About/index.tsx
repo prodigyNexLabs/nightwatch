@@ -10,36 +10,35 @@ const About = () => (
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">About</p>
           <h1 className="text-4xl font-semibold text-slate-900">Meet {siteConfig.appName}</h1>
           <p className="text-base text-slate-600">
-            {siteConfig.appName} is the Urban Access & Discovery OS designed to align fast-moving
-            city environments with real-time context. We orchestrate parking, curbside commerce, and
-            live event flows into a single operational view.
+            {siteConfig.appName} is an app-first discovery layer for spaces, events, shops, and
+            parking. We make every space clear and legible with rules and capacity so people can
+            decide fast.
           </p>
         </div>
         <div className="grid gap-8 md:grid-cols-2">
           <div className="space-y-3">
             <h2 className="text-2xl font-semibold text-slate-900">Our mission</h2>
             <p className="text-sm text-slate-600">
-              We believe every city deserves an access layer that respects time, intent, and
-              community. Crozroad connects travelers, operators, and local stakeholders through live
-              intelligence that makes the urban experience more predictable.
+              We believe access should be clear and immediate. Crozroad connects people to real
+              spaces, real events, and real businesses with live, trustworthy context.
             </p>
           </div>
           <div className="space-y-3">
             <h2 className="text-2xl font-semibold text-slate-900">Built by {siteConfig.companyName}</h2>
             <p className="text-sm text-slate-600">
-              {siteConfig.companyName} is an urban technology studio focused on making dense
-              environments legible. We blend software, data, and operational design to keep cities
-              accessible without losing their character.
+              {siteConfig.companyName} builds products that unlock underused urban space. We focus on
+              app-first discovery, clear operating rules, and local visibility that benefit both
+              users and businesses.
             </p>
           </div>
         </div>
         <div className="rounded-3xl border border-white/70 bg-white/80 p-8 shadow-soft">
           <h3 className="text-xl font-semibold text-slate-900">What makes Crozroad different</h3>
           <ul className="mt-4 space-y-3 text-sm text-slate-600">
-            <li>• Time-windowed signal layers, not static maps.</li>
-            <li>• Multi-stakeholder routing for drivers, vendors, and event producers.</li>
-            <li>• Compliance-ready hosting tools for street commerce and pop-up activations.</li>
-            <li>• A modular OS that scales from a single district to an entire metro.</li>
+            <li>• Spaces are the foundation, not static listings.</li>
+            <li>• Events and shops are anchored to real space and real footfall.</li>
+            <li>• Parking and pitstops are first-class access layers.</li>
+            <li>• Clear rules and capacity keep expectations transparent.</li>
           </ul>
         </div>
       </Container>

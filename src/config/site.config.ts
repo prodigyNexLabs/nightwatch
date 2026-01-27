@@ -31,7 +31,7 @@ export const siteConfig: SiteConfig = {
   urls: {
     website: 'https://crozroad.prodigynexlabs.com',
     dashboard: 'https://app.crozroad.prodigynexlabs.com',
-    pressKit: 'https://crozroad.prodigynexlabs.com/brochure',
+    pressKit: 'https://crozroad.prodigynexlabs.com/contact',
   },
   socials: [
     { label: 'X', href: 'https://x.com/prodigynexlabs' },
@@ -47,5 +47,5 @@ export const siteConfig: SiteConfig = {
   },
   tagline: 'Urban Access & Discovery OS',
   summary:
-    'Crozroad delivers real-time urban intelligence for parking, street commerce, and live events — turning dynamic street data into instant, actionable access.',
+    'Crozroad is an app-first view of spaces, events, businesses, parking, and pitstops — keeping urban access clear and connected.',
 }

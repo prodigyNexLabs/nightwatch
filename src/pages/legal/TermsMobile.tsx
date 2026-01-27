@@ -66,7 +66,7 @@ const TermsMobile = () => (
           <h2 className="text-lg font-semibold text-slate-900">7. Limitation of liability</h2>
           <p>
             The app is provided “as is.” We are not liable for losses arising from connectivity
-            issues, location inaccuracies, host actions, or third-party services.
+            issues, location inaccuracies, or third-party services.
           </p>
         </section>
 

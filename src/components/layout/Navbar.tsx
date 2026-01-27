@@ -7,8 +7,6 @@ import Container from './Container'
 
 const navItems = [
   { label: 'About', href: '/about' },
-  { label: 'Brochure', href: '/brochure' },
-  { label: 'Hosting', href: '/hosting-rules' },
   { label: 'Contact', href: '/contact' },
 ]
 
@@ -51,7 +49,7 @@ const Navbar = () => {
               navigate(contactPath)
             }}
           >
-            Request Access
+            Get the App
           </Button>
         </div>
         <button
@@ -88,7 +86,7 @@ const Navbar = () => {
               }}
               className="w-full"
             >
-              Request Access
+              Get the App
             </Button>
           </Container>
         </div>
