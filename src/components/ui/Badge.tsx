@@ -6,7 +6,7 @@ type BadgeProps = HTMLAttributes<HTMLSpanElement>
 const Badge = ({ className, ...props }: BadgeProps) => (
   <span
     className={cn(
-      'inline-flex items-center rounded-full bg-mint/30 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-slate-800',
+      'inline-flex items-center rounded-pill border border-crz-outline/75 bg-crz-surface px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-crz-softText',
       className,
     )}
     {...props}

@@ -4,7 +4,7 @@ import Footer from './Footer'
 import Navbar from './Navbar'
 
 const PageLayout = () => (
-  <div className="flex min-h-screen flex-col bg-sand">
+  <div className="flex min-h-screen flex-col">
     <ScrollToTop />
     <Navbar />
     <main className="flex-1">

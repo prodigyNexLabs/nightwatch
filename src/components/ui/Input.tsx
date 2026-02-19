@@ -6,7 +6,7 @@ type InputProps = InputHTMLAttributes<HTMLInputElement>
 const Input = ({ className, ...props }: InputProps) => (
   <input
     className={cn(
-      'h-12 w-full rounded-2xl border border-slate-200 bg-white/80 px-4 text-sm text-slate-900 shadow-sm outline-none transition focus:border-mintAccent focus:ring-2 focus:ring-mint/40',
+      'h-11 w-full rounded-md border border-crz-outline/80 bg-crz-surface px-4 text-sm text-crz-text shadow-sm transition-[border-color,box-shadow] duration-fast ease-standard placeholder:text-crz-mutedText focus:border-crz-primary focus:outline-none focus:ring-2 focus:ring-crz-primary/20',
       className,
     )}
     {...props}

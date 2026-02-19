@@ -4,48 +4,35 @@ export type SocialLink = {
 }
 
 export type SiteConfig = {
-  appName: string
-  companyName: string
+  platformName: string
+  parentCompany: string
+  parentWebsite: string
   supportEmail: string
-  urls: {
-    website: string
-    dashboard: string
-    pressKit: string
-  }
+  legalEmail: string
+  headquarters: string
+  appSummary: string
+  hostSummary: string
   socials: SocialLink[]
-  legal: {
-    entityName: string
-    entityType: string
-    registrationRegion: string
-    officeAddress: string
-    dataContact: string
-  }
-  tagline: string
-  summary: string
+  parentCompanyName: string
+  parentCompanyWebsite: string
+  parentCompanyEmail: string
 }
 
 export const siteConfig: SiteConfig = {
-  appName: 'Crozroad',
-  companyName: 'ProdigyNexLabs',
-  supportEmail: 'support@prodigynexlabs.com',
-  urls: {
-    website: 'https://crozroad.prodigynexlabs.com',
-    dashboard: 'https://app.crozroad.prodigynexlabs.com',
-    pressKit: 'https://crozroad.prodigynexlabs.com/contact',
-  },
+  platformName: 'Crozroad',
+  parentCompany: 'Prodigy',
+  parentWebsite: 'https://www.prodigy.com',
+  supportEmail: 'support@crozroad.com',
+  legalEmail: 'legal@crozroad.com',
+  headquarters: 'Crozroad Pvt Ltd, Ernakulam District, Kerala, India',
+  appSummary:
+    'Crozroad brings together local spaces, parking, nearby activities, host tools, and community collaboration into one platform. Available on iOS and Android.',
+  hostSummary:
+    'The host web app helps providers manage listings, handle requests, and maintain profile readiness for trusted local operations.',
   socials: [
-    { label: 'X', href: 'https://x.com/prodigynexlabs' },
-    { label: 'LinkedIn', href: 'https://linkedin.com/company/prodigynexlabs' },
-    { label: 'GitHub', href: 'https://github.com/ProdigyNexLabs' },
+    { label: 'Crozroad', href: 'https://www.crozroad.com' },
   ],
-  legal: {
-    entityName: 'ProdigyNexLabs',
-    entityType: 'Urban technology studio',
-    registrationRegion: 'Delaware, USA',
-    officeAddress: '710 Market Street, Suite 200, Wilmington, DE',
-    dataContact: 'privacy@prodigynexlabs.com',
-  },
-  tagline: 'Urban Access & Discovery OS',
-  summary:
-    'Crozroad is an app-first view of spaces, events, businesses, parking, and pitstops — keeping urban access clear and connected.',
+  parentCompanyName: 'ProdigyNexLabs',
+  parentCompanyWebsite: 'https://www.prodigynexlabs.com',
+  parentCompanyEmail: 'contact@prodigynexlabs.com'
 }

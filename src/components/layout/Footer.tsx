@@ -1,46 +1,63 @@
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { siteConfig } from '../../config/site.config'
 import Container from './Container'
 
 const legalLinks = [
-  { label: 'Privacy Policy (Web)', href: '/privacy' },
-  { label: 'Privacy Policy (Mobile)', href: '/privacy/mobile' },
-  { label: 'Terms (Web)', href: '/terms' },
-  { label: 'Terms (Mobile)', href: '/terms/mobile' },
+  { label: 'Privacy Policy', href: '/legal/privacy-policy' },
+  { label: 'Terms & Conditions', href: '/legal/terms-and-conditions' },
+  { label: 'Renting Terms', href: '/legal/renting-terms' },
+  { label: 'User Terms', href: '/legal/user-terms' },
 ]
 
 const Footer = () => (
-  <footer className="border-t border-white/60 bg-white/70 py-10">
-    <Container className="grid gap-8 md:grid-cols-[1.5fr_1fr_1fr]">
-      <div className="space-y-3">
-        <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Built by</p>
-        <h3 className="text-2xl font-semibold text-slate-900">{siteConfig.companyName}</h3>
-        <p className="text-sm text-slate-600">{siteConfig.summary}</p>
+  <footer className="border-t border-crz-outline/70 bg-crz-surface/80 py-12">
+    <Container className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_0.8fr_0.8fr]" wide>
+      <div className="space-y-4">
+        <img src="/banner.png" alt={`${siteConfig.platformName} brand`} className="h-9 w-auto" />
+        <p className="max-w-xl text-sm leading-7 text-crz-softText">{siteConfig.appSummary}</p>
       </div>
-      <div className="space-y-3 text-sm text-slate-600">
-        <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Contact</p>
+
+      <div className="space-y-3 text-sm text-crz-softText">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.2em]">Contact</p>
         <p>{siteConfig.supportEmail}</p>
-        <p>{siteConfig.legal.officeAddress}</p>
+        <p>{siteConfig.headquarters}</p>
+        <Link to="/contact" className="inline-block transition hover:text-crz-text">Contact Us &rarr;</Link>
+        <p className="text-xs text-crz-softText">A {siteConfig.parentCompany} product</p>
       </div>
-      <div className="space-y-3 text-sm text-slate-600">
-        <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Legal</p>
+
+      <div className="space-y-3 text-sm text-crz-softText">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.2em]">Quick Links</p>
+        <div className="flex flex-col gap-2">
+          <Link to="/download" className="transition hover:text-crz-text">Download App</Link>
+          <Link to="/download/ios" className="transition hover:text-crz-text">App Store</Link>
+          <Link to="/download/android" className="transition hover:text-crz-text">Google Play</Link>
+          <Link to="/host/auth" className="transition hover:text-crz-text">Host Login</Link>
+        </div>
+      </div>
+
+      <div className="space-y-3 text-sm text-crz-softText">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.2em]">Legal</p>
         <div className="flex flex-col gap-2">
           {legalLinks.map((link) => (
-            <NavLink key={link.href} to={link.href} className="hover:text-slate-900">
+            <Link key={link.href} to={link.href} className="transition hover:text-crz-text">
               {link.label}
-            </NavLink>
+            </Link>
           ))}
         </div>
       </div>
     </Container>
-    <Container className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-slate-200 pt-6 text-xs text-slate-500">
-      <p>© {new Date().getFullYear()} {siteConfig.appName}. All rights reserved.</p>
+
+    <Container className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-crz-outline/60 pt-6 text-xs text-crz-softText" wide>
+      <p>© {new Date().getFullYear()} Crozroad. All rights reserved.</p>
       <div className="flex items-center gap-4">
-        {siteConfig.socials.map((link) => (
-          <a key={link.label} href={link.href} className="hover:text-slate-800" target="_blank" rel="noreferrer">
-            {link.label}
-          </a>
-        ))}
+        <a
+          href="https://www.crozroad.com"
+          target="_blank"
+          rel="noreferrer"
+          className="transition hover:text-crz-text"
+        >
+          crozroad.com
+        </a>
       </div>
     </Container>
   </footer>

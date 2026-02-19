@@ -1,7 +1,7 @@
 import type { ButtonHTMLAttributes } from 'react'
 import { cn } from '../../utils/cn'
 
-type ButtonVariant = 'primary' | 'secondary' | 'ghost'
+type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'danger'
 
 type ButtonSize = 'sm' | 'md' | 'lg'
 
@@ -11,18 +11,22 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 }
 
 const baseStyles =
-  'inline-flex items-center justify-center rounded-full font-semibold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-mintAccent/60 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-60'
+  'inline-flex items-center justify-center rounded-md font-semibold tracking-wide transition-[background-color,transform,box-shadow,border-color,color] duration-normal ease-standard focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-crz-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-crz-surface disabled:pointer-events-none disabled:opacity-60'
 
 const variantStyles: Record<ButtonVariant, string> = {
-  primary: 'bg-mintAccent text-white shadow-soft hover:-translate-y-0.5',
-  secondary: 'bg-slate-900 text-white hover:bg-slate-800',
-  ghost: 'border border-slate-200 bg-white/60 text-slate-900 hover:bg-white',
+  primary:
+    'bg-crz-primary text-white shadow-card hover:-translate-y-0.5 hover:bg-crz-primaryHover active:translate-y-0 active:shadow-soft',
+  secondary:
+    'bg-crz-secondary text-white shadow-card hover:-translate-y-0.5 hover:brightness-95 active:translate-y-0 active:shadow-soft',
+  ghost: 'border border-crz-outline/70 bg-crz-surface text-crz-text hover:bg-crz-surfaceAlt',
+  danger:
+    'bg-crz-error text-white shadow-card hover:-translate-y-0.5 hover:brightness-95 active:translate-y-0 active:shadow-soft',
 }
 
 const sizeStyles: Record<ButtonSize, string> = {
-  sm: 'px-4 py-2 text-sm',
-  md: 'px-5 py-2.5 text-sm',
-  lg: 'px-6 py-3 text-base',
+  sm: 'h-9 px-4 text-xs',
+  md: 'h-11 px-5 text-sm',
+  lg: 'h-12 px-6 text-sm',
 }
 
 const Button = ({

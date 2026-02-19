@@ -4,13 +4,7 @@ import { cn } from '../../utils/cn'
 type CardProps = HTMLAttributes<HTMLDivElement>
 
 const Card = ({ className, ...props }: CardProps) => (
-  <div
-    className={cn(
-      'rounded-3xl border border-white/50 bg-white/80 p-6 shadow-soft backdrop-blur',
-      className,
-    )}
-    {...props}
-  />
+  <div className={cn('surface-card rounded-lg p-5', className)} {...props} />
 )
 
 export default Card
