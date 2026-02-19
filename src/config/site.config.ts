@@ -13,15 +13,14 @@ export type SiteConfig = {
   appSummary: string
   hostSummary: string
   socials: SocialLink[]
-  parentCompanyName: string
-  parentCompanyWebsite: string
   parentCompanyEmail: string
 }
 
 export const siteConfig: SiteConfig = {
   platformName: 'Crozroad',
-  parentCompany: 'Prodigy',
-  parentWebsite: 'https://www.prodigy.com',
+  parentCompany: 'ProdigyNexLabs',
+  parentWebsite: 'https://prodigynexlabs.com',
+  parentCompanyEmail: 'contact@prodigynexlabs.com',
   supportEmail: 'support@crozroad.com',
   legalEmail: 'legal@crozroad.com',
   headquarters: 'Crozroad Pvt Ltd, Ernakulam District, Kerala, India',
@@ -32,7 +31,4 @@ export const siteConfig: SiteConfig = {
   socials: [
     { label: 'Crozroad', href: 'https://www.crozroad.com' },
   ],
-  parentCompanyName: 'ProdigyNexLabs',
-  parentCompanyWebsite: 'https://www.prodigynexlabs.com',
-  parentCompanyEmail: 'contact@prodigynexlabs.com'
 }

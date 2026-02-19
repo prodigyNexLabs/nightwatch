@@ -22,7 +22,18 @@ const Footer = () => (
         <p>{siteConfig.supportEmail}</p>
         <p>{siteConfig.headquarters}</p>
         <Link to="/contact" className="inline-block transition hover:text-crz-text">Contact Us &rarr;</Link>
-        <p className="text-xs text-crz-softText">A {siteConfig.parentCompany} product</p>
+        <p className="text-xs text-crz-softText">
+          A{' '}
+          <a
+            href={siteConfig.parentWebsite}
+            target="_blank"
+            rel="noreferrer"
+            className="underline transition hover:text-crz-text"
+          >
+            {siteConfig.parentCompany}
+          </a>{' '}
+          product
+        </p>
       </div>
 
       <div className="space-y-3 text-sm text-crz-softText">

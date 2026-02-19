@@ -15,7 +15,7 @@ const TermsConditionsPage = () => (
       These Terms & Conditions ("Terms") govern your access to and use of the Crozroad platform, including our mobile applications (iOS and Android), website, APIs, and all related services (collectively, "the Services"). By accessing or using the Services, you agree to be bound by these Terms.
     </P>
     <P>
-      "Crozroad", "we", "us", or "our" refers to the Crozroad platform operated by Prodigy. "You" or "User" refers to any individual or entity accessing or using the Services.
+      "Crozroad", "we", "us", or "our" refers to the Crozroad platform operated by ProdigyNexLabsNexLabs. "You" or "User" refers to any individual or entity accessing or using the Services.
     </P>
 
     <H2>1. Eligibility</H2>
@@ -74,7 +74,7 @@ const TermsConditionsPage = () => (
     <H2>5. Intellectual Property</H2>
     <H3>5.1 Our Property</H3>
     <P>
-      All intellectual property in the Services, including but not limited to the Crozroad name, logo, design, software, APIs, documentation, and content, is owned by Prodigy or its licensors. You may not copy, modify, distribute, or create derivative works without our express written consent.
+      All intellectual property in the Services, including but not limited to the Crozroad name, logo, design, software, APIs, documentation, and content, is owned by ProdigyNexLabs or its licensors. You may not copy, modify, distribute, or create derivative works without our express written consent.
     </P>
     <H3>5.2 Your Content</H3>
     <P>
@@ -107,7 +107,7 @@ const TermsConditionsPage = () => (
 
     <H2>9. Indemnification</H2>
     <P>
-      You agree to indemnify, defend, and hold harmless Crozroad, Prodigy, and their officers, directors, employees, and agents from any claims, damages, losses, liabilities, and expenses (including legal fees) arising from your use of the Services, violation of these Terms, or infringement of any third-party rights.
+      You agree to indemnify, defend, and hold harmless Crozroad, ProdigyNexLabs, and their officers, directors, employees, and agents from any claims, damages, losses, liabilities, and expenses (including legal fees) arising from your use of the Services, violation of these Terms, or infringement of any third-party rights.
     </P>
 
     <H2>10. Dispute Resolution</H2>

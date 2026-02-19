@@ -166,7 +166,7 @@ const PrivacyPolicyPage = () => (
       <li><strong>Privacy / Legal:</strong> legal@crozroad.com</li>
       <li><strong>General support:</strong> support@crozroad.com</li>
       <li><strong>Address:</strong> Suite 210, Market District, Wilmington, Delaware, USA</li>
-      <li><strong>Parent company:</strong> Prodigy</li>
+      <li><strong>Parent company:</strong> ProdigyNexLabs</li>
     </UL>
   </LegalPageShell>
 )
